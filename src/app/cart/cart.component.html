@@ -1,0 +1,6 @@
+<div *ngFor="let item of items">
+  <h3>{{ getCount() }}{{ item.name }}</h3>
+  <h4>{{ item.price | currency }}</h4>
+  <p>{{ item.description }}</p>
+  <!-- {{count = count + 1}} -->
+</div>
