@@ -1,6 +1,14 @@
 <div *ngFor="let item of items">
-  <h3>{{ getCount() }}{{ item.name }}</h3>
+  <h3>{{ getCount() }} {{ item.name }}</h3>
   <h4>{{ item.price | currency }}</h4>
   <p>{{ item.description }}</p>
-  <!-- {{count = count + 1}} -->
+  <div class="itemQuantity">
+    Quantity: {{ item.quantity }}
+    <div>
+      <button type="button">+</button>
+      <button type="button">-</button>
+    </div>
+  </div>
+  <button type="button">Delete Item</button>
 </div>
+<div *ngIf="items.length == 0">Your cart is empty</div>

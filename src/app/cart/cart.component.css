@@ -1,0 +1,8 @@
+.itemQuantity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.itemQuantity button {
+  margin: 5px;
+}
