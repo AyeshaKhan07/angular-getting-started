@@ -29,7 +29,9 @@ export class CartService {
   }
 
   deleteItem(product: Item) {
+    console.log(this.items.find((item) => item.id == product.id));
     this.items.filter((item) => item.id !== product.id);
+    console.log(this.items);
   }
   getItems() {
     return this.items;

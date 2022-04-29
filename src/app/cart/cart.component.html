@@ -9,6 +9,6 @@
       <button type="button">-</button>
     </div>
   </div>
-  <button type="button">Delete Item</button>
+  <button type="button" (click)="deleteItem(item)">Delete Item</button>
 </div>
 <div *ngIf="items.length == 0">Your cart is empty</div>
